@@ -1,0 +1,54 @@
+{
+  "fiche_technique": {
+    "I_IDENTITE": {
+      "nom_vernaculaire": "Platane commun",
+      "nom_latin": "Platanus × acerifolia",
+      "famille": "Platanaceae",
+      "genre": "Platanus",
+      "espece": "× acerifolia",
+      "cultivar": "Hybride naturel (P. orientalis × P. occidentalis)",
+      "categorie": "Arbre"
+    },
+    "II_CYCLE_DE_VIE": {
+      "caduc_persistant": "Caduc",
+      "type": "Vivace",
+      "floraison_mois": ["Avril", "Mai"],
+      "couleur_floraison": "Vert-jaune (inflorescences globuleuses discrètes)"
+    },
+    "III_EXIGENCES": {
+      "rusticite_celsius": -25,
+      "echelle_rusticite": "EURO-SIBÉRIAN",
+      "resistance_chaleur": "Élevé",
+      "besoins_eau": "Moyen",
+      "exposition": "Plein Soleil",
+      "sol_necessaire": "Profond, frais à humide, tolère sols compactés et calcaires",
+      "origines_espece": "Hybride horticole (Europe, XVIIe siècle)"
+    },
+    "IV_CARACTERISTIQUES": {
+      "odorante": false,
+      "mellifere_intensite": "Faible",
+      "envahissante_potentiel": "Faible",
+      "developpement_bac": "Non",
+      "resistance_pietinement": "Élevé (système racinaire robuste)",
+      "resistance_intemperies": "Élevé (Vent, Sécheresse temporaire, Pollution atmosphérique)"
+    },
+    "V_GESTION_URBAINE": {
+      "facilite_entretien_score": 3,
+      "justification_entretien": "Synthèse : Taille de formation nécessaire en jeune âge, élagage structurel tous les 5-7 ans. Sensibilité modérée à l'anthracnose (Apiognomonia veneta) en climat humide IDF, mais résilience élevée. Nettoyage saisonnier des feuilles et fruits (akènes) requis.",
+      "capacite_drainante": "Moyen",
+      "resistance_pollution": "Élevé (Atmosphère urbaine, tolérance modérée au sel de déneigement)",
+      "impact_biodiversite": "Moyen (Cavités pour nidification oiseaux et chiroptères, peu de ressources nectarifères, abri estival important)",
+      "taux_couverture_ombrage": "Élevé (Couronne large et dense, ombrage optimal en été)",
+      "perennite_sujet": "Longue (150-300 ans en conditions urbaines favorables)"
+    },
+    "VI_SANTE_USAGES": {
+      "comestible": "Non",
+      "mode_consommation_note": "Non applicable",
+      "toxique_humains": false,
+      "toxique_animaux": false,
+      "alerte_toxicite_detail": "**ATTENTION :** Les poils des fruits et jeunes feuilles peuvent provoquer des irritations cutanées et respiratoires chez les personnes sensibles. Port de gants recommandé lors de la manipulation.",
+      "bouturage_difficulte": "Moyen"
+    }
+  }
+}
+
