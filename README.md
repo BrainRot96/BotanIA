@@ -1,196 +1,373 @@
-# 🌿 BotanIA
+# 🌿 BotanIA - Encyclopédie Botanique Intelligente
 
-> **L'encyclopédie botanique open source du XXIe siècle**  
-> Une base de données collaborative enrichie par l'IA pour démocratiser la connaissance des plantes
+> Une encyclopédie botanique open source alimentée par l'IA et les données scientifiques officielles, dédiée à la flore d'Île-de-France et au-delà.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Plant Count](https://img.shields.io/badge/Plantes-440+-green.svg)](https://github.com/VotrePseudo/BotanIA)
-[![Status](https://img.shields.io/badge/Status-En%20développement-yellow.svg)](https://github.com/VotrePseudo/BotanIA)
-[![Growing](https://img.shields.io/badge/Base-En%20expansion-brightgreen.svg)](https://github.com/VotrePseudo/BotanIA)
-
----
-
-## 🎯 Vision
-
-BotanIA vise à devenir **la référence mondiale** pour la connaissance botanique au XXIe siècle, dans l'esprit de Carl von Linné mais avec les outils modernes : intelligence artificielle, bases de données ouvertes, et collaboration scientifique mondiale.
-
-### Objectifs à long terme :
-- 🌍 **50 000+ espèces** documentées avec précision scientifique
-- 🤝 **Collaboration internationale** entre botanistes, chercheurs et passionnés
-- 🆓 **100% gratuit et open source** - aucune publicité, jamais
-- 🤖 **Enrichissement automatique par IA** pour accélérer la documentation
-- 📱 **Accessible partout** - web, mobile, API publique
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
+[![Plant Data: CC-BY-SA 4.0](https://img.shields.io/badge/Data-CC--BY--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Plants](https://img.shields.io/badge/Plantes-200+-success.svg)](./frontend/ftv-platane/client/public/catalogue.json)
+[![Status](https://img.shields.io/badge/Statut-En%20développement-yellow.svg)]()
 
 ---
 
-## 📊 État actuel
+## 📸 Aperçu
 
-### Base de données
-- ✅ **440+ espèces végétales** documentées (en expansion continue)
-- ✅ Focus initial : plantes adaptées au climat parisien (Île-de-France + Méditerranéen)
-- ✅ Fiches techniques complètes (taxonomie, morphologie, culture, gestion urbaine)
-- ✅ Calendrier saisonnier des tâches horticoles
-- ✅ Conseils de plantation et erreurs courantes
-- ✅ Données de performance pour plantes couvre-sol
-
-> 📈 **La base s'enrichit régulièrement** avec de nouvelles espèces issues de sources scientifiques validées
-
-### Fonctionnalités
-- 🔍 Recherche avancée multi-critères (famille, catégorie, rusticité, usage)
-- 🏷️ Système de tags personnalisés
-- ⭐ Notation des performances (couvre-sol)
-- 📋 Listes de favoris multiples avec partage par URL
-- 📄 Export PDF professionnel avec tableau comparatif
-- 📊 Export CSV enrichi pour analyse de données
+> **Note :** Ajoute ici des captures d'écran de ton application
+> 
+> Exemple :
+> ```markdown
+> ![Interface de recherche](./docs/images/screenshot-recherche.png)
+> ![Fiche détaillée d'une plante](./docs/images/screenshot-fiche.png)
+> ```
 
 ---
 
-## 🚀 Roadmap
+## 🎯 À propos
 
-### Phase 1 : Proof of Concept 🔄 **(En cours)**
-- [x] Interface de recherche avancée
-- [x] Système de favoris et tags personnalisés
-- [x] Export PDF/CSV professionnel
-- [ ] Atteindre 1000 espèces documentées
-- [ ] Validation scientifique par botanistes
+**BotanIA** est une encyclopédie botanique moderne et collaborative qui combine :
+- 🔬 **Rigueur scientifique** : Données issues de TAXREF v17, GBIF, INPN, Tela Botanica
+- 🤖 **Intelligence Artificielle** : Enrichissement automatique avec Claude (Anthropic)
+- 🌍 **Open Source** : Code et données 100% libres
+- 🏙️ **Focus urbain** : Adapté à la gestion végétale des espaces publics parisiens
 
-### Phase 2 : Expansion France 📅 **(Prochaine étape)**
-- [ ] 2000 espèces France métropolitaine
-- [ ] Intégration TAXREF v17 (nomenclature officielle)
-- [ ] Dockerisation et déploiement
-- [ ] API REST publique
+### Objectifs du projet
 
-### Phase 3 : Infrastructure open source 📅 **(3-6 mois)**
-- [ ] Base de données PostgreSQL scalable
-- [ ] Enrichissement automatique par IA (N8n + Claude API)
-- [ ] Système de contribution communautaire
-- [ ] Validation par botanistes certifiés
-
-### Phase 4 : Référence internationale 📅 **(12-24 mois)**
-- [ ] 50 000+ espèces mondiales
-- [ ] Intégration GBIF complète
-- [ ] Applications mobiles (iOS/Android)
-- [ ] IA de reconnaissance d'images
-- [ ] Partenariats institutionnels (MNHN, Kew Gardens, etc.)
+1. **Démocratiser** l'accès à l'information botanique de qualité
+2. **Faciliter** la gestion des espaces verts urbains
+3. **Créer** une référence francophone libre et collaborative
+4. **Développer** des outils IA pour enrichir les connaissances botaniques
 
 ---
 
-## 🛠️ Technologies
+## ✨ Fonctionnalités actuelles
+
+### 🔍 Recherche avancée
+- Recherche par nom commun, nom scientifique, famille
+- Filtres multi-critères (rusticité, exposition, floraison, etc.)
+- Suggestions intelligentes en temps réel
+
+### 📋 Gestion de données
+- **200+ espèces** documentées avec 50+ champs de données
+- Fiches techniques complètes (cycle de vie, exigences, gestion urbaine)
+- Sources scientifiques citées pour chaque donnée
+
+### 🎨 Interface moderne
+- Design responsive (desktop, tablette, mobile)
+- Composants UI shadcn/ui
+- Thème clair/sombre
+- Animations fluides (Framer Motion)
+
+### 💾 Fonctionnalités utilisateur
+- ⭐ Système de favoris
+- 🏷️ Tags personnalisés
+- 📤 Export PDF/CSV des sélections
+- 🔖 Listes de plantes multiples
+
+---
+
+## 🚀 Démarrage rapide
+
+### Prérequis
+
+- **Node.js** 18+ ([Télécharger](https://nodejs.org/))
+- **pnpm** (recommandé) ou npm
+
+### Installation
+```bash
+# 1. Clone le repository
+git clone https://github.com/BrainRot96/BotanIA.git
+cd BotanIA/frontend/ftv-platane
+
+# 2. Installe les dépendances
+pnpm install
+
+# 3. Lance en mode développement
+pnpm dev
+
+# 4. Ouvre ton navigateur
+# L'app sera disponible sur http://localhost:3000
+```
+
+### Build pour production
+```bash
+pnpm build
+```
+
+Les fichiers optimisés seront dans `dist/`.
+
+---
+
+## 🗂️ Structure du projet
+```
+BotanIA/
+├── README.md                    # Ce fichier
+├── ROADMAP.md                   # Feuille de route du projet
+├── CONTRIBUTING.md              # Guide de contribution
+├── CODE_OF_CONDUCT.md           # Code de conduite
+├── ARCHITECTURE.md              # Architecture technique
+├── LICENSE                      # Licence GPL-3.0
+│
+├── docs/                        # Documentation
+│   ├── SOURCES.md               # Sources de données scientifiques
+│   └── DATA_STRUCTURE.md        # Structure JSON des plantes
+│
+└── frontend/                    # Application React
+    └── ftv-platane/
+        ├── client/              # Code source
+        │   ├── public/
+        │   │   └── catalogue.json   # 200 plantes
+        │   └── src/
+        │       ├── components/      # Composants React
+        │       ├── contexts/        # State management
+        │       ├── hooks/           # Custom hooks
+        │       └── lib/             # Utilitaires
+        ├── package.json
+        └── vite.config.ts
+```
+
+---
+
+## 🛠️ Stack technologique
 
 ### Frontend
-- **React** + TypeScript
-- **Tailwind CSS** pour le design
-- **shadcn/ui** pour les composants
+- **Framework** : React 18 + TypeScript
+- **Build** : Vite
+- **Styling** : Tailwind CSS 4
+- **UI Components** : shadcn/ui (Radix UI)
+- **Animations** : Framer Motion
+- **Export** : jsPDF + CSV
 
-### Backend (à venir)
-- **PostgreSQL** pour la base de données
-- **FastAPI** pour l'API REST
-- **Docker** pour la containerisation
+### Données
+- **Format** : JSON structuré
+- **Sources** : TAXREF v17, GBIF, INPN, Tela Botanica
+- **Validation** : TypeScript strict
 
-### Automatisation
-- **N8n** pour les workflows d'enrichissement
-- **Claude API** (Anthropic) pour génération de contenu
-- **GitHub Actions** pour CI/CD
+### Futur (Roadmap)
+- **Backend** : FastAPI (Python 3.11+)
+- **Base de données** : PostgreSQL 15+
+- **Automatisation** : N8n (workflows)
+- **IA** : Claude API (Anthropic)
+- **Déploiement** : Docker + Docker Compose
 
 ---
 
-## 📚 Sources de données
+## 📊 Données et sources
 
-BotanIA s'appuie exclusivement sur des sources scientifiques officielles et validées :
+### Sources scientifiques officielles
 
-### Sources principales :
-- 🇫🇷 **TAXREF v17** (MNHN) - Nomenclature officielle française
-- 🌍 **GBIF** - Global Biodiversity Information Facility
-- 🌿 **Tela Botanica** - Réseau botanique francophone
-- 🌺 **Plants of the World Online** (Kew Gardens) - Validation taxonomique
-- 🔴 **Liste Rouge UICN France** - Statuts de conservation
+Toutes les données de BotanIA proviennent de sources validées scientifiquement :
 
-Voir [SOURCES.md](docs/SOURCES.md) pour la liste complète.
+- 🇫🇷 **[TAXREF v17](https://inpn.mnhn.fr/telechargement/referentiels/taxref)** (MNHN) - Nomenclature taxonomique de référence
+- 🌍 **[GBIF](https://www.gbif.org/)** - Global Biodiversity Information Facility
+- 🇫🇷 **[INPN](https://inpn.mnhn.fr/)** - Inventaire National du Patrimoine Naturel
+- 🌿 **[Tela Botanica](https://www.tela-botanica.org/)** - Réseau botanique francophone
+- 🇬🇧 **[POWO (Kew)](https://powo.science.kew.org/)** - Plants of the World Online
+
+**Voir [docs/SOURCES.md](./docs/SOURCES.md) pour la liste complète.**
+
+### Licences des données
+
+- **Code** : GPL-3.0 (libre et open source)
+- **Données botaniques** : CC-BY-SA 4.0 (partage avec attribution)
+- **Photos** : Variable selon sources (CC0, CC-BY, CC-BY-SA)
 
 ---
 
 ## 🤝 Contribuer
 
-BotanIA est un projet collaboratif qui a besoin de vous !
+**BotanIA est un projet collaboratif ouvert à tous !**
 
-### Comment contribuer :
-- 🌱 **Botanistes** : Validation des fiches, ajout d'espèces
+### Types de contributions bienvenues
+
+- 🌱 **Botanistes** : Validation scientifique, ajout d'espèces
 - 📸 **Photographes** : Photos botaniques haute qualité
-- 💻 **Développeurs** : Améliorations code, nouvelles fonctionnalités
-- 📝 **Rédacteurs** : Descriptions, conseils de culture
-- 🌍 **Traducteurs** : Traductions multilingues
+- 💻 **Développeurs** : Code, fonctionnalités, corrections
+- 📝 **Rédacteurs** : Descriptions, traductions
+- 🎨 **Designers** : Interface, UX/UI
+- 🧪 **Testeurs** : Tests, bugs, suggestions
 
-Lisez [CONTRIBUTING.md](CONTRIBUTING.md) pour démarrer.
+### Comment contribuer
+
+1. **Lis le guide** : [CONTRIBUTING.md](./CONTRIBUTING.md)
+2. **Lis le code de conduite** : [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+3. **Explore les Issues** : [Issues ouvertes](https://github.com/BrainRot96/BotanIA/issues)
+4. **Rejoins les Discussions** : [Discussions](https://github.com/BrainRot96/BotanIA/discussions)
+
+### Contribution rapide
+```bash
+# 1. Fork le projet sur GitHub
+
+# 2. Clone ton fork
+git clone https://github.com/TonUsername/BotanIA.git
+
+# 3. Crée une branche
+git checkout -b feature/ma-contribution
+
+# 4. Fais tes modifications
+
+# 5. Commit et push
+git add .
+git commit -m "feat: ajout fonctionnalité X"
+git push origin feature/ma-contribution
+
+# 6. Ouvre une Pull Request sur GitHub
+```
 
 ---
 
-## 📖 Documentation
+## 🗓️ Roadmap
 
-- [ARCHITECTURE.md](ARCHITECTURE.md) - Architecture technique du projet
-- [DATA_STRUCTURE.md](docs/DATA_STRUCTURE.md) - Structure des données JSON
-- [SOURCES.md](docs/SOURCES.md) - Sources scientifiques utilisées
-- [ROADMAP.md](ROADMAP.md) - Feuille de route détaillée
-- [DEPLOYMENT.md](docs/DEPLOYMENT.md) - Guide de déploiement
+**Consulte la [ROADMAP.md](./ROADMAP.md) pour le plan détaillé.**
+
+### Phase 1 : MVP (✅ En cours - Q4 2024)
+- [x] Frontend React fonctionnel
+- [x] 200 espèces documentées
+- [x] Recherche et filtres avancés
+- [x] Export PDF/CSV
+- [ ] Déploiement en ligne
+
+### Phase 2 : Enrichissement (Q1 2025)
+- [ ] Backend FastAPI
+- [ ] Base de données PostgreSQL
+- [ ] API REST publique
+- [ ] 1000 espèces
+- [ ] Système de contribution
+
+### Phase 3 : Intelligence (Q2-Q3 2025)
+- [ ] Workflows N8n (synchronisation automatique)
+- [ ] Enrichissement IA (Claude API)
+- [ ] Reconnaissance d'images
+- [ ] Application mobile
+
+### Phase 4 : Expansion (Q4 2025)
+- [ ] 5000 espèces
+- [ ] Couverture France métropolitaine
+- [ ] API GraphQL
+- [ ] Communauté active (100+ contributeurs)
+
+---
+
+## 📈 Statistiques
+
+- **🌱 Plantes** : 200+ espèces
+- **👥 Contributeurs** : 1 (cherche des contributeurs !)
+- **📊 Champs de données** : 50+ par plante
+- **🔬 Sources scientifiques** : 20+ bases officielles
+- **📜 Lignes de code** : ~10 000 (frontend)
+- **📦 Dépendances** : 50+ packages npm
+
+---
+
+## 🏆 Crédits
+
+### Créateur et mainteneur principal
+
+**VicDaHood** (Victor Costil)
+- 🌱 Jardinier à la Ville de Paris (DEVE)
+- 🎓 En reconversion vers Développeur IA / Prompt Engineer
+- 💼 [LinkedIn](https://www.linkedin.com/in/victor-costil/)
+- 🐙 [GitHub](https://github.com/BrainRot96)
+
+### Remerciements
+
+- **Anthropic** pour Claude (IA utilisée pour enrichissement)
+- **MNHN** pour TAXREF et INPN
+- **Tela Botanica** pour la communauté et les données
+- **GBIF** pour les occurrences géolocalisées
+- **Kew Gardens** pour POWO
+- **Communauté open source** (React, Vite, Tailwind, shadcn/ui)
 
 ---
 
 ## 📜 Licence
 
-BotanIA est distribué sous licence **GNU General Public License v3.0 (GPL-3.0)**.
+- **Code** : GPL-3.0 - Voir [LICENSE](./LICENSE)
+- **Données** : CC-BY-SA 4.0
 
-- ✅ Utilisation libre et gratuite
-- ✅ Modification et amélioration encouragées
-- ✅ Distribution autorisée
-- ⚠️ Les modifications doivent rester open source (copyleft)
-- ⚠️ Aucune utilisation commerciale sans contribution au projet
-
-Voir [LICENSE](LICENSE) pour les détails complets.
-
----
-
-## 🌟 Citation scientifique
-
-Si vous utilisez BotanIA dans vos recherches, merci de citer :
-```
-BotanIA Contributors (2025). BotanIA - The Modern Plant Encyclopedia.
-Retrieved from https://github.com/VotrePseudo/BotanIA
-```
+**En résumé :**
+- ✅ Utilisation libre (commercial ou non)
+- ✅ Modification libre
+- ✅ Distribution libre
+- ⚠️ Obligation de citer la source
+- ⚠️ Partage à l'identique (même licence)
+- ⚠️ Code dérivé doit rester open source
 
 ---
 
-## 💬 Contact & Communauté
+## 📞 Contact
 
-- 🐛 **Bugs & suggestions** : [GitHub Issues](https://github.com/VotrePseudo/BotanIA/issues)
-- 💡 **Discussions** : [GitHub Discussions](https://github.com/VotrePseudo/BotanIA/discussions)
-- 📧 **Email** : contact@botania.org (à créer)
-- 💼 **LinkedIn** : [Profil du créateur](#)
-
----
-
-## 🙏 Remerciements
-
-Ce projet est rendu possible grâce à :
-- **Ville de Paris - DEVE** pour l'inspiration et les données initiales
-- **Anthropic** pour Claude AI et les outils d'enrichissement
-- **Manus AI** pour le prototypage rapide
-- **Communauté open source** pour les outils et bibliothèques
-- **Tous les botanistes** qui ont contribué au savoir botanique depuis Linné
+- **Issues GitHub** : [Créer une issue](https://github.com/BrainRot96/BotanIA/issues)
+- **Discussions** : [GitHub Discussions](https://github.com/BrainRot96/BotanIA/discussions)
+- **Email** : contact@botania.org
+- **Twitter/X** : [@BotanIA_Project](https://twitter.com/BotanIA_Project)
 
 ---
 
-## 📈 Statistiques du projet
+## 🌟 Soutenir le projet
 
-![Contributions](https://img.shields.io/github/contributors/VotrePseudo/BotanIA)
-![Commits](https://img.shields.io/github/commit-activity/m/VotrePseudo/BotanIA)
-![Issues](https://img.shields.io/github/issues/VotrePseudo/BotanIA)
-![Stars](https://img.shields.io/github/stars/VotrePseudo/BotanIA)
+### Moyens de soutenir BotanIA
+
+- ⭐ **Star le repo** sur GitHub
+- 🐛 **Signaler des bugs** via les Issues
+- 💡 **Proposer des fonctionnalités**
+- 🌱 **Ajouter des espèces** (botanistes)
+- 📸 **Contribuer des photos**
+- 💻 **Contribuer au code**
+- 📢 **Partager le projet** sur les réseaux sociaux
+- 📝 **Écrire un article** sur BotanIA
+
+---
+
+## 🔮 Vision long terme
+
+**BotanIA vise à devenir :**
+
+1. **La référence francophone** en données botaniques open source
+2. **Un outil essentiel** pour les gestionnaires d'espaces verts
+3. **Une plateforme collaborative** pour la communauté botanique
+4. **Un exemple réussi** d'IA au service de la science citoyenne
+
+**Objectif 2030 :**
+- 50 000 espèces documentées
+- Couverture Europe + Méditerranée
+- 1000+ contributeurs actifs
+- Référence mondiale en botanique urbaine
+
+---
+
+## 📚 Documentation
+
+- 📖 [Guide de contribution](./CONTRIBUTING.md)
+- 🗺️ [Feuille de route](./ROADMAP.md)
+- 🏗️ [Architecture technique](./ARCHITECTURE.md)
+- 📚 [Sources de données](./docs/SOURCES.md)
+- 📐 [Structure des données](./docs/DATA_STRUCTURE.md)
+- 🤝 [Code de conduite](./CODE_OF_CONDUCT.md)
+
+---
+
+## 🙏 Mentions spéciales
+
+Ce projet a été rendu possible grâce à :
+- **Manus AI** pour le développement rapide de l'interface
+- **Claude (Anthropic)** pour l'assistance au code et à la rédaction
+- **GitHub** pour l'hébergement et la collaboration
+- **La communauté open source** pour les outils et bibliothèques
 
 ---
 
 <p align="center">
-  <strong>🌿 Construit avec passion pour la botanique et l'open source 🌿</strong>
+  <strong>🌿 Fait avec passion pour la botanique et l'open source 🌿</strong><br>
+  <sub>Si vous aimez ce projet, n'oubliez pas de lui donner une ⭐ !</sub>
 </p>
 
 <p align="center">
-  <sub>BotanIA - D'une collection parisienne à une encyclopédie mondiale en construction</sub>
+  <a href="https://github.com/BrainRot96/BotanIA/stargazers">
+    <img src="https://img.shields.io/github/stars/BrainRot96/BotanIA?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/BrainRot96/BotanIA/network/members">
+    <img src="https://img.shields.io/github/forks/BrainRot96/BotanIA?style=social" alt="GitHub Forks">
+  </a>
+  <a href="https://github.com/BrainRot96/BotanIA/watchers">
+    <img src="https://img.shields.io/github/watchers/BrainRot96/BotanIA?style=social" alt="GitHub Watchers">
+  </a>
 </p>
